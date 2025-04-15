@@ -1,2 +1,6 @@
-.DS_Store
+# Desktop Services Store
+*.DS_Store
+
+# Dev
 extras/
+src/
