@@ -1,0 +1,13 @@
+#N canvas 316 580 896 193 10;
+#X obj 44 377 outlet;
+#X obj 348 377 outlet;
+#X obj 185 29 r button1_press @hv_param, f 30;
+#X obj 431 192 r button2_press @hv_param, f 30;
+#X obj 363 470 r EncSwitch @hv_param;
+#X obj 99 470 r Encoder @hv_param;
+#X obj 99 624 s led1 @hv_param;
+#X obj 271 626 s led2 @hv_param;
+#X connect 2 0 0 0;
+#X connect 2 0 6 0;
+#X connect 3 0 1 0;
+#X connect 3 0 7 0;
