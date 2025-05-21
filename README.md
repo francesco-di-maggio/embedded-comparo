@@ -2,7 +2,7 @@
 
 ## NIME 2025 | June 24–27, Canberra, Australia
 
-Welcome to the official repository accompanying our publication: **"Embedded Comparo: Small DSP Systems Side-by-Side"** presented at NIME 2025. This repository provides comprehensive documentation and resources for deploying real-time audio patches using **Pure Data (Pd)** across four embedded platforms: **Bela**, **Daisy**, **OWL**, and **Raspberry Pi**.
+Welcome to the official repository accompanying our publication: **"Embedded Comparo: Small DSP Systems Side-by-Side"** presented at NIME 2025. This repository provides (work-in-progress) documentation and resources for deploying real-time audio patches using **Pure Data (Pd)** across four embedded platforms: **Bela**, **Daisy**, **OWL**, and **Raspberry Pi**.
 
 <p align="left">
   <img alt="teaser-NIME25" src="https://github.com/user-attachments/assets/8629600a-b368-4c10-9982-a071cd52097f" width="">
@@ -20,14 +20,40 @@ Our aim is to simplify the process for musicians, researchers, educators, and de
 
 ## Repository Structure
 
-Each platform folder contains:
+```
+.
+├── README.md                 # Main documentation
+├── deployment/               # Deployment documentation and step-by-step guides
+│   ├── bela/
+│   ├── daisy/
+│   ├── owl/
+│   └── raspberry_pi/
+└── 
+```
 
-* A `template.pd` file with hardware-specific configurations
-* Pure Data patches:
+---
 
-  * `fm.pd`: Simple FM synthesis
-  * `granular.pd`: Granular synthesis
-  * `cloud_generator.pd`: Real-time granular generator
+## Deployment Directory
+
+The `deployment/` directory contains subfolders for each target platform, each offering a complete set of Pure Data patches and platform-specific abstractions. These implementations are based on our study’s methodology, which emphasizes portability, abstraction, and minimal patch modification between systems.
+
+Each platform subdirectory contains:
+
+* **`template.pd`**: a core abstraction for control and I/O mapping tailored to that hardware
+* **`fm.pd`**: a simple FM synthesizer used for baseline audio deployment
+* **`granular.pd`**: a multi-voice granular sampler based on buffer playback
+* **`cloud_generator.pd`**: an advanced real-time granular processor using audio input and dynamic voice instantiation
+
+All patches follow a common patching structure with a modular control abstraction, enabling easier adaptation between targets.
+
+### Platform-Specific Details:
+
+* **Bela**: Supports both native and hvcc-compiled Pd modes. Compatible with Bela Pepper Eurorack interface.
+* **Daisy**: Requires compilation with Plugdata or `pd2dsy` using the Heavy compiler. Tested on Daisy Pod and Daisy Patch.Init.
+* **OWL**: Compiled online via the OWL Web IDE using the Heavy compiler. Mappings must follow the OWL Pd namespace.
+* **Raspberry Pi**: Runs Pd natively under Linux. Tested with Organelle M (based on Pi Compute Module 3+) and supports real-time patching with GUI.
+
+See each subfolder README or the `docs/` directory for specific deployment steps.
 
 ---
 
@@ -46,7 +72,7 @@ To test a patch:
 
 ## Documentation and Tutorials
 
-We are continuously updating this repository with additional images, diagrams, and future video tutorials. 
+We are continuously updating this repository with additional images, diagrams, and future video tutorials. Contributions from the community to expand documentation are highly encouraged.
 
 ---
 
@@ -88,7 +114,9 @@ We welcome your suggestions and feedback to help guide these developments.
 
 Please cite our work if you use this repository in your research:
 
-Di Maggio, F. et al. (2025). *Embedded Comparo: Small DSP Systems Side-by-Side*. Proceedings of the International Conference on New Interfaces for Musical Expression (NIME).
+```
+Di Maggio, F. et al. (2025). Embedded Comparo: Small DSP Systems Side-by-Side. Proceedings of the International Conference on New Interfaces for Musical Expression (NIME).
+```
 
 ---
 
@@ -117,5 +145,5 @@ This project is licensed under the [**MIT License**](LICENSE.md).
 For questions, collaboration, or feedback:
 
 * GitHub Issues
-* Email: \[[f.di.maggio@tue.nl](mailto:f.di.maggio@tue.nl)]
+* Email: [f.di.maggio@tue.nl](mailto:f.di.maggio@tue.nl)
 * Project page: [https://github.com/francesco-di-maggio/embedded-comparo](https://github.com/yourname/embedded-comparo)
