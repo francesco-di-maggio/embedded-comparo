@@ -5,7 +5,7 @@
 Welcome to the official repository accompanying our publication: **"Embedded Comparo: Small DSP Systems Side-by-Side"** presented at NIME 2025. This repository provides comprehensive documentation and resources for deploying real-time audio patches using **Pure Data (Pd)** across four embedded platforms: **Bela**, **Daisy**, **OWL**, and **Raspberry Pi**.
 
 <p align="left">
-  <img alt="teaser-NIME25" src="https://github.com/user-attachments/assets/8629600a-b368-4c10-9982-a071cd52097f" width="765">
+  <img alt="teaser-NIME25" src="https://github.com/user-attachments/assets/8629600a-b368-4c10-9982-a071cd52097f" width="">
 </p>
 
 ---
