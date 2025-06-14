@@ -27,8 +27,7 @@ Our aim is to simplify the process for musicians, researchers, educators, and de
 │   ├── bela/
 │   ├── daisy/
 │   ├── owl/
-│   └── raspberry_pi/
-└── 
+│   └── raspberry-pi/
 ```
 
 ---
