@@ -41,7 +41,7 @@ Each platform subdirectory contains:
 * **`template.pd`**: a core abstraction for control and I/O mapping tailored to that hardware
 * **`fm.pd`**: a simple FM synthesizer used for baseline audio deployment
 * **`granular.pd`**: a multi-voice granular sampler based on buffer playback
-* **`cloud_generator.pd`**: an advanced real-time granular processor using audio input and dynamic voice instantiation
+* **`cloud_generator.pd`**: a real-time granular processor using audio input and dynamic voice instantiation
 
 All patches follow a common patching structure with a modular control abstraction, enabling easier adaptation between targets.
 
