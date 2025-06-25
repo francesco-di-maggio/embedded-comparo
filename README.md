@@ -22,12 +22,21 @@ Our aim is to simplify the process for musicians, researchers, educators, and de
 
 ```
 .
-├── README.md                 # Main documentation
-├── deployment/               # Deployment documentation and step-by-step guides
-│   ├── bela/
-│   ├── daisy/
-│   ├── owl/
-│   └── raspberry-pi/
+├── README.md                  # Main project overview
+├── deployment/                # Deployment documentation and step-by-step guides
+│   ├── bela/                  # Bela platform documentation
+│   │   └── pepper/            # Bela Pepper-specific setup
+│   │       └── pd/            # Pd patches for Bela Pepper
+│   ├── daisy/                 # Daisy platform documentation
+│   │   └── pod/               # Daisy Pod-specific setup
+│   │       └── pd/            # Pd patches for Daisy Pod
+│   ├── owl/                   # OWL platform documentation
+│   │   └── lich/              # OWL Lich-specific setup
+│   │       └── pd/            # Pd patches for OWL Pod
+│   └── rpi/                   # Raspberry Pi platform (Organelle) documentation
+│       └── organelle/         # Organelle-specific setup
+│           └── pd/            # Pd patches for Organelle
+└──
 ```
 
 ---
