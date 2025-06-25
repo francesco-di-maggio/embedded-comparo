@@ -1,4 +1,4 @@
-# Bela Pepper Deployment Guide
+# Bela Pepper
 
 Bela supports two modes of Pd deployment:
 - **libpd mode**: Runs Pd patches using Bela’s browser IDE, compiled to run via `libpd`.

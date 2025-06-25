@@ -1,4 +1,4 @@
-# Daisy Pod Deployment Guide
+# Daisy Pod
 
 Daisy supports Pd deployment via:
 - [PlugData](https://plugdata.org)

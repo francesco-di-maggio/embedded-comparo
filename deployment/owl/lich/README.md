@@ -1,4 +1,4 @@
-# OWL Lich Deployment Guide
+# OWL Lich
 
 OWL Lich uses a cloud-based IDE to compile and upload Pd patches via the [Heavy Compiler (hvcc)](https://github.com/enzienaudio/heavy).
 

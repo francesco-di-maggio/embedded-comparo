@@ -1,4 +1,4 @@
-# Organelle Deployment Guide
+# Organelle
 
 Organelle runs Pure Data natively on a Raspberry Pi 3 and can be used standalone or with external peripherals.
 
