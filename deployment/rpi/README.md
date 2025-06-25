@@ -1,19 +1,9 @@
-# Organelle
+# Raspberry Pi Platform (Organelle)
 
-Organelle runs Pure Data natively on a Raspberry Pi 3 and can be used standalone or with external peripherals.
+The Organelle by Critter & Guitari runs on a Raspberry Pi 3 and executes Pd patches natively on a Linux OS.
 
-### Steps to Deploy a Pd Patch on Organelle
+Users can upload patches via Wi-Fi or USB. The Organelle is designed to operate both standalone and with external peripherals (monitor, keyboard, mouse).
 
-1. **Prepare the Patch**  
-   Use Organelle-compatible naming (e.g. `knob1`, `button1`).
+Pd patches can be loaded through a web interface or manually through the file system.
 
-2. **Transfer the Patch**
-   - Connect to Organelle Wi-Fi in AP mode
-   - Use encoder to set up client Wi-Fi mode
-   - Access via: [http://organellem.local](http://organellem.local)
-
-3. **Upload and Run**  
-   - Use built-in patch manager to load patches
-   - Alternatively, use USB drive or SSH
-
-📎 Organelle Info: [https://www.critterandguitari.com/organelle](https://www.critterandguitari.com/organelle)
+📎 Product info: [https://www.critterandguitari.com/organelle](https://www.critterandguitari.com/organelle)
