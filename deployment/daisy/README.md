@@ -2,7 +2,8 @@
 
 Daisy supports Pd deployment via:
 - [PlugData](https://plugdata.org)
-- `pd2dsy` (Pd to Daisy converter)
+- [pd2dsy](https://github.com/electro-smith/pd2dsy) (Pd to Daisy converter) – NOTE: This repository was archived by the owner on Mar 19, 2025.
+
 - [Oopsy](https://github.com/electro-smith/oopsy) (for Max/MSP)
 
 ### Steps to Deploy a Pd Patch on Daisy Pod
@@ -19,7 +20,6 @@ Daisy supports Pd deployment via:
 3. **Upload and Compile**  
    Daisy must be in DFU mode.
    - **PlugData Export**: Directly generate firmware
-   - **Daisy Web Programmer**: Upload and flash via browser  
-     [https://electro-smith.github.io/Programmer/](https://electro-smith.github.io/Programmer/)
+   - [**Daisy Web Programmer**](https://electro-smith.github.io/Programmer/): Upload and flash via browser
 
 📎 Daisy Wiki: [https://github.com/electro-smith/DaisyWiki](https://github.com/electro-smith/DaisyWiki)
