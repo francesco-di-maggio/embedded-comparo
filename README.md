@@ -2,10 +2,10 @@
 
 ## NIME 2025 | June 24–27, Canberra, Australia
 
-Welcome to the official repository accompanying our publication: **"Embedded Comparo: Small DSP Systems Side-by-Side"** presented at NIME 2025. This repository provides (work-in-progress) documentation and resources for deploying real-time audio patches using **Pure Data (Pd)** across four embedded platforms: **Bela**, **Daisy**, **OWL**, and **Raspberry Pi**.
+Welcome to the official repository accompanying our publication: [**Embedded Comparo: Small DSP Systems Side-by-Side**](https://nime.org/proceedings/2025/nime2025_72.pdf) presented at NIME 2025. This repository provides (work-in-progress) documentation and resources for deploying real-time audio patches using **Pure Data (Pd)** across four embedded platforms: **Bela**, **Daisy**, **OWL**, and **Raspberry Pi**.
 
 <p align="left">
-  <img alt="NIME'25 - A0 Poster Presentation" src="https://github.com/user-attachments/assets/b87e2694-af1f-45d0-80a9-f940cdb1e159" width="">
+  <img alt="NIME'25 - A0 Poster Presentation" src="https://github.com/user-attachments/assets/b87e2694-af1f-45d0-80a9-f940cdb1e159" width="100%">
 </p>
 
 ---
@@ -127,7 +127,6 @@ This project is licensed under the [**MIT License**](LICENSE.md).
 
 ## Useful Links
 
-* [NIME 2025 Paper link](https://nime.org/proceedings/2025/nime2025_72.pdf)
 * [Pure Data](https://puredata.info)
 * [Plugdata](https://plugdata.org)
 * [Bela](https://bela.io)
