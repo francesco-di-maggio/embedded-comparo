@@ -123,7 +123,7 @@ We welcome your suggestions and feedback to help guide these developments.
 Please cite our work if you use this repository in your research:
 
 ```
-Di Maggio, F. et al. (2025). Embedded Comparo: Small DSP Systems Side-by-Side. Proceedings of the International Conference on New Interfaces for Musical Expression (NIME).
+Di Maggio, F. et al. (2025). Embedded Comparo: Small DSP Systems Side-by-Side. Proceedings of the International Conference on New Interfaces for Musical Expression, NIME ’25, June 24–27, 2025, Canberra, Australia.
 ```
 
 ---
