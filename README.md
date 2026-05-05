@@ -1,6 +1,6 @@
 # Embedded Comparo
 
-*A comparative reference for embedded audio DSP — platforms × languages.*
+A comparative reference for embedded audio DSP — platforms × languages.
 
 ---
 
