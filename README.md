@@ -1,10 +1,6 @@
 # Embedded Comparo
 
-This repository collects deployment workflows, example patches, and documentation for running audio DSP on small embedded systems — including Bela, Daisy, OWL, Raspberry Pi, and ESP32 — using languages like Pure Data, Max/gen~, RNBO, FAUST, and SuperCollider.
-
-<p align="left">
-  <img alt="NIME'25 - A0 Poster Presentation" src="https://github.com/user-attachments/assets/b87e2694-af1f-45d0-80a9-f940cdb1e159" width="100%">
-</p>
+*A comparative reference for embedded audio DSP — platforms × languages.*
 
 ---
 
@@ -12,7 +8,7 @@ This repository collects deployment workflows, example patches, and documentatio
 
 Embedded systems have become vital for digital musical instrument design and interactive audio projects. However, deploying audio DSP patches across various hardware platforms often involves complex and inconsistent workflows, fragmented documentation, and one-off toolchains.
 
-This project addresses that fragmentation by collecting **comparative deployment workflows** under one roof — across both hardware platforms (e.g., Bela, Daisy, OWL, Raspberry Pi, ESP32) and audio programming languages (e.g., Pure Data, Max/gen~, RNBO, FAUST, SuperCollider). Each combination is documented with a shared patch set wherever feasible, so the differences live in the wrapping rather than the substance.
+This project addresses that fragmentation by collecting **comparative deployment workflows** under one roof — across both hardware platforms (e.g., Bela, Daisy, OWL, Raspberry Pi, ESP32) and audio programming languages (e.g., Pure Data, Max/gen~, RNBO, FAUST, SuperCollider). Pure Data is the current default; Max/gen~, RNBO, FAUST, and SuperCollider are on the roadmap, with coverage varying per platform.
 
 Our aim is to lower the barrier to picking a target, switching between them, and contributing new ones — promoting broader adoption, exploration, and collaboration amongst developers, researchers, musicians, and educators.
 
@@ -153,8 +149,12 @@ Proceedings of the International Conference on New Interfaces for Musical Expres
 NIME '25, June 24–27, 2025, Canberra, Australia.
 ```
 
+<p align="left">
+  <img alt="NIME'25 - A0 Poster Presentation" src="https://github.com/user-attachments/assets/b87e2694-af1f-45d0-80a9-f940cdb1e159" width="100%">
+</p>
+
 ---
 
 ## License
 
-This project is licensed under the [**MIT License**](LICENSE).
+[**MIT License**](LICENSE)
