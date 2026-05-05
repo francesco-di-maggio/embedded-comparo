@@ -60,7 +60,7 @@
 #X restore 658 248 pd multiplier;
 #X obj 343 132 r Knob2 @hv_param;
 #X text 860 602 Audio Outputs;
-#X obj 662 556 tgl 18 0 empty empty empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 661 556 tgl 18 0 empty empty empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 298 515 tgl 18 0 empty empty empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 57 515 tgl 18 0 empty empty empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 57 366 bng 19 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
