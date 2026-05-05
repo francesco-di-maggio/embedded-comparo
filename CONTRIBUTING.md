@@ -1,6 +1,6 @@
 # Contributing
 
-Thank you for your interest in contributing! Your involvement helps make this project better for everyone.
+Thank you for your interest in contributing! This project thrives on community involvement, and we welcome contributions of all kinds. Whether you're improving documentation, optimizing patches, or adding new features, your efforts are greatly appreciated.
 
 ## How You Can Contribute
 
