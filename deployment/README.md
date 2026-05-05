@@ -1,19 +1,20 @@
 # Deployment Methods
 
-This directory documents how to deploy Pure Data (Pd) patches to various embedded audio platforms.
+This directory documents how to deploy patches to various embedded audio platforms — primarily Pure Data, with other languages (Max/gen~, RNBO, FAUST, SuperCollider) as coverage expands.
 
 Each platform requires its own specific tools and setup process. See the subdirectories for detailed, step-by-step instructions:
 
 - [Bela](./bela/README.md)
 - [Daisy](./daisy/README.md)
+- [ESP32](./esp/README.md)
 - [OWL](./owl/README.md)
-- [Organelle](./organelle/README.md)
+- [Raspberry Pi (Organelle)](./pi/README.md)
 
 ---
 
 ## About the Heavy Compiler
 
-To compile our Pd patches for Daisy and OWL, we used the [**Heavy Compiler (hvcc)**](https://github.com/enzienaudio/heavy).
+To compile Pd patches for Daisy and OWL, we use the [**Heavy Compiler (hvcc)**](https://github.com/enzienaudio/heavy).
 
 Heavy analyzes Pd patches and translates their signal processing components into highly optimized C++ code. This offers several advantages:
 

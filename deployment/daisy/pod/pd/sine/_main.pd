@@ -4,7 +4,7 @@
 #X text 120 218 Audio Outputs;
 #X obj 54 133 osc~ 220;
 #X obj 54 162 *~ 0.3;
-#X text 54 43 Daisy Pod – Hello World;
+#X text 54 43 Daisy Pod – Sine;
 #X connect 3 0 4 0 32.................E.........PA.........n.....;
 #X connect 4 0 1 1 32.................T....r1+++OE....q8+++iB....;
 #X connect 4 0 1 0 32.................T....bz+++OE....G8+++iB....;

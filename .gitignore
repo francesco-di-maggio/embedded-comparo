@@ -1,5 +1,26 @@
 # Desktop Services Store
 .DS_Store
 
+# Editor / IDE
+*.swp
+*.swo
+.vscode/
+.idea/
+
 # Development
 dev/
+
+# Claude
+.claude/
+CLAUDE.md
+
+# Library zip archives
+*.zip
+
+# Arduino build artifacts
+build/
+*.elf
+*.bin
+*.map
+
+# gen~ build artifacts
