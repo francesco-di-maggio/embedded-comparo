@@ -8,7 +8,7 @@ A comparative reference for embedded audio DSP — platforms × languages.
 
 Embedded systems have become vital for digital musical instrument design and interactive audio projects. However, deploying audio DSP patches across various hardware platforms often involves complex and inconsistent workflows, fragmented documentation, and one-off toolchains.
 
-This project addresses that fragmentation by collecting **comparative deployment workflows** under one roof — across both hardware platforms (e.g., Bela, Daisy, OWL, Raspberry Pi, ESP32) and audio programming languages (e.g., Pure Data, Max/gen~, RNBO, FAUST, SuperCollider). Pure Data is the current default; Max/gen~, RNBO, FAUST, and SuperCollider are on the roadmap, with coverage varying per platform.
+This project addresses that fragmentation by collecting **comparative deployment workflows** under one roof — across both hardware platforms (e.g., Bela, Daisy, OWL, Raspberry Pi) and audio programming languages (e.g., Pure Data). Pure Data is the current default. Max/gen~, RNBO, FAUST, and SuperCollider are on the roadmap, with coverage varying per platform.
 
 Our aim is to lower the barrier to picking a target, switching between them, and contributing new ones — promoting broader adoption, exploration, and collaboration amongst developers, researchers, musicians, and educators.
 
@@ -28,9 +28,7 @@ Each board's `pd/` directory contains a set of patch folders. Each patch folder 
 * **`granular`** — multi-voice granular sampler from a stored buffer
 * **`cloud`** — real-time granular processor on live audio input
 
-Folder names are lowercase + kebab-case (e.g. `ring-mod`). Patch folders ending in `?` (e.g. `cloud-?`) are work-in-progress and don't fully load yet.
-
-ESP32 follows Arduino's convention instead: each sketch is a PascalCase folder (`RingMod/`, `FMSynth/`, `GranularSynth/`) containing `<Sketch>.ino` plus a `data/` directory with the `.pd` patches that get flashed to LittleFS at boot.
+Folder names are lowercase + kebab-case (e.g. `ring-mod`). Patch folders ending in `-wip` (e.g. `cloud-wip`) are work-in-progress and don't fully load yet.
 
 Coverage of the canonical patch set varies per board — see each board's README for what's currently working.
 
@@ -40,7 +38,6 @@ Coverage of the canonical patch set varies per board — see each board's README
 * **Daisy** — requires compilation with Plugdata or `pd2dsy` using the Heavy compiler. Tested on Daisy Pod and Daisy Field.
 * **OWL** — compiled online via the OWL Web IDE using the Heavy compiler. Mappings must follow the OWL Pd namespace.
 * **Raspberry Pi** — runs Pd natively under Linux. Tested with Organelle M (based on Pi Compute Module 3+) and supports real-time patching with GUI.
-* **ESP32** — runs headless libpd 0.56-2 via [ESPdLib](https://github.com/algomusic/ESPdLib) on Arduino IDE. Tested on Adafruit ESP32 Feather V2 with MAX98357A I2S DAC. 
 
 See each subfolder's README for specific deployment steps.
 
@@ -54,7 +51,7 @@ See each subfolder's README for specific deployment steps.
 * **FAUST** — compiles to nearly every target included here
 * **SuperCollider** — for Raspberry Pi-class targets
 
-Coverage varies by platform; see the per-platform README for the current status.
+Coverage varies by platform – see the per-platform README for the current status.
 
 ---
 
@@ -70,10 +67,6 @@ To test a patch in Pure Data:
 2. Open `_main.pd` from the chosen patch folder (e.g. `fm/_main.pd`) in your platform's IDE.
 3. Follow the build or compilation steps detailed for Bela, Daisy, OWL, or Raspberry Pi.
 4. Raspberry Pi runs Pd natively, or via Patchbox OS.
-
-### ESP32 
-
-Pure Data on ESP32 — three synth sketches (ring mod, FM, granular) using libpd via ESPdLib.
 
 ---
 
@@ -102,7 +95,7 @@ Please review our [CONTRIBUTING.md](./CONTRIBUTING.md) before submitting your wo
 
 Planned future developments include:
 
-* More boards: Teensy 4, RP2040, STM32, ESP32-C3 / C6
+* More boards: ESP32, Teensy 4, RP2040, STM32
 * Broader language coverage: Max/gen~, RNBO, FAUST, and SuperCollider examples
 * Enhanced modular abstractions for filtering, CV/MIDI integration, and beyond
 * Improved compatibility of advanced patches on microcontrollers
@@ -133,7 +126,6 @@ We welcome your suggestions and feedback to help guide these developments.
 
 ### Libraries & Tools
 * [Heavy Compiler Collection (hvcc)](https://wasted-audio.github.io/hvcc/)
-* [ESPdLib](https://github.com/algomusic/ESPdLib)
 
 ---
 

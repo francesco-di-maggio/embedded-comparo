@@ -6,7 +6,6 @@ Each platform requires its own specific tools and setup process. See the subdire
 
 - [Bela](./bela/README.md)
 - [Daisy](./daisy/README.md)
-- [ESP32](./esp/README.md)
 - [OWL](./owl/README.md)
 - [Raspberry Pi (Organelle)](./pi/README.md)
 
