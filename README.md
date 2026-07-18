@@ -8,9 +8,9 @@ A comparative reference for embedded audio DSP — platforms × languages.
 
 Embedded systems have become vital for digital musical instrument design and interactive audio projects. However, deploying audio DSP patches across various hardware platforms often involves complex and inconsistent workflows, fragmented documentation, and one-off toolchains.
 
-This project addresses that fragmentation by collecting **comparative deployment workflows** under one roof — across both hardware platforms (e.g., Bela, Daisy, OWL, Raspberry Pi) and audio programming languages (e.g., Pure Data). Pure Data is the current default. Max/gen~, RNBO, FAUST, and SuperCollider are on the roadmap, with coverage varying per platform.
+This project addresses that fragmentation by collecting **comparative deployment workflows** under one roof, across both hardware platforms (e.g., Bela, Daisy, OWL, Raspberry Pi) and audio programming languages (e.g., Pure Data, Max/gen~ and RNBO). Pure Data is the current default. Max/gen~, RNBO, FAUST, and SuperCollider are on the roadmap, with coverage varying per platform.
 
-Our aim is to lower the barrier to picking a target, switching between them, and contributing new ones — promoting broader adoption, exploration, and collaboration amongst developers, researchers, musicians, and educators.
+Our aim is to lower the barrier to picking a target, switching between them, and contributing new ones, promoting broader adoption, exploration, and collaboration amongst researchers, musicians, and educators.
 
 ---
 
@@ -20,17 +20,7 @@ Layout follows `deployment/<platform>/<board>/<language>/`. The `deployment/` di
 
 ## Pure Data Patches
 
-Each board's `pd/` directory contains a set of patch folders. Each patch folder holds `_main.pd` (the entry patch) plus any supporting abstractions:
-
-* **`template-<board>`** — board-specific adapter for control and I/O mapping
-* **`sine`** — minimal sanity-check tone
-* **`fm`** — 2-operator FM synthesizer
-* **`granular`** — multi-voice granular sampler from a stored buffer
-* **`cloud`** — real-time granular processor on live audio input
-
-Folder names are lowercase + kebab-case (e.g. `ring-mod`). Patch folders ending in `-wip` (e.g. `cloud-wip`) are work-in-progress and don't fully load yet.
-
-Coverage of the canonical patch set varies per board — see each board's README for what's currently working.
+Each board's `pd/` directory contains a set of patch folders. Each patch folder holds `_main.pd` (the entry patch) plus any supporting abstractions.
 
 ### Hardware-Specific Details
 
@@ -47,11 +37,11 @@ See each subfolder's README for specific deployment steps.
 
 * **Pure Data** — native or Heavy-compiled across all current platforms
 * **Max / gen~** — Cycling '74 environment, with RNBO export to supported hardware
-* **RNBO** — C++ export targeting Bela, Daisy, and Raspberry Pi
+* **RNBO** — C++ export targeting Bela and Raspberry Pi
 * **FAUST** — compiles to nearly every target included here
 * **SuperCollider** — for Raspberry Pi-class targets
 
-Coverage varies by platform – see the per-platform README for the current status.
+See the per-platform README for the current status.
 
 ---
 
@@ -72,7 +62,7 @@ To test a patch in Pure Data:
 
 ## Contributing
 
-Community contributions to this project are welcome!
+Community contributions to this project are welcome.
 
 You can contribute by:
 
@@ -131,9 +121,9 @@ We welcome your suggestions and feedback to help guide these developments.
 
 ## Origin & Citation
 
-This repository began as the artifact accompanying our NIME 2025 paper [*Embedded Comparo: Small DSP Systems Side-by-Side*](https://nime.org/proceedings/2025/nime2025_72.pdf), which compared four platforms running Pure Data: Bela, Daisy, OWL, and Raspberry Pi. The publication snapshot is preserved as [**v1.0**](https://github.com/francesco-di-maggio/embedded-comparo/releases/tag/v1.0). Subsequent versions broaden the project into a living, open comparison of small DSP systems.
+This repository accompanies our NIME 2025 paper [*Embedded Comparo: Small DSP Systems Side-by-Side*](https://nime.org/proceedings/2025/nime2025_72.pdf), which compares four platforms running Pure Data: Bela, Daisy, OWL, and Raspberry Pi. The publication snapshot is preserved as [**v1.0**](https://github.com/francesco-di-maggio/embedded-comparo/releases/tag/v1.0). Subsequent versions broaden the project into an ongoing comparison of small DSP systems.
 
-Please cite our work if you use this repository in your research:
+Please cite our work if you use this repository and paper in your research:
 
 ```
 Di Maggio, F. et al. (2025). Embedded Comparo: Small DSP Systems Side-by-Side.
