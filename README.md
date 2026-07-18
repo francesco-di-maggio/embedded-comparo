@@ -60,27 +60,6 @@ To test a patch in Pure Data:
 
 ---
 
-## Contributing
-
-Community contributions to this project are welcome.
-
-You can contribute by:
-
-* Improving existing patches
-* Porting patches to additional platforms or languages
-* Optimizing deployment workflows
-* Adding examples from other audio programming languages (FAUST, RNBO, gen~, SuperCollider)
-
-### How to Contribute
-
-1. Fork the repository
-2. Create your branch
-3. Submit a pull request with a clear description of your contribution
-
-Please review our [CONTRIBUTING.md](./CONTRIBUTING.md) before submitting your work.
-
----
-
 ## Future Work
 
 Planned future developments include:
@@ -134,6 +113,14 @@ NIME '25, June 24–27, 2025, Canberra, Australia.
 <p align="left">
   <img alt="NIME'25 - A0 Poster Presentation" src="https://github.com/user-attachments/assets/b87e2694-af1f-45d0-80a9-f940cdb1e159" width="100%">
 </p>
+
+---
+
+## Contributing
+
+Community contributions to this project are welcome.
+
+Please review our [CONTRIBUTING.md](./CONTRIBUTING.md) before submitting your work.
 
 ---
 
